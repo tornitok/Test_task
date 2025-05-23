@@ -55,13 +55,7 @@ Test\_task/
 
 ## Running Tests
 
-### 🧪 API Tests
-
-```bash
-pytest tests/api/
-```
-
-### 🌐 UI Tests
+### 🧪 Tests
 
 ```bash
 pytest tests/
