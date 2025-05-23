@@ -1,5 +1,3 @@
-Here’s the full `README.md` content in Markdown format for you to copy and paste:
-
 ```markdown
 # Test Task Project
 
@@ -12,7 +10,7 @@ This project is a test automation suite that includes:
 - 🔧 Modular architecture using page objects and API endpoint classes
 - 📦 Easy configuration and session management using `pytest` fixtures
 
-The tests target both UI elements of a web application and the endpoints of the Airport Gap API ([https://airportgap.com/docs](https://airportgap.com/docs)).
+The tests target both UI elements of a web application (https://www.saucedemo.com/) and the endpoints of the Airport Gap API ([https://airportgap.com/docs](https://airportgap.com/docs)).
 
 ---
 
@@ -24,8 +22,6 @@ Test\_task/
 │   └── endpoints/
 ├── pages/                  # UI page object models (e.g., login, inventory)
 ├── tests/
-│   ├── api/                # API test cases
-│   └── ui/                 # UI test cases
 ├── config/                 # Base URL and configuration values
 ├── conftest.py             # Fixtures for drivers, sessions, and test setup
 └── README.md
@@ -68,13 +64,13 @@ pytest tests/api/
 ### 🌐 UI Tests
 
 ```bash
-pytest tests/ui/
+pytest tests/
 ```
 
 You can also run specific tests with:
 
 ```bash
-pytest -k "test_distance_between_kix_and_nrt"
+pytest -k "test_login_page"
 ```
 
 ---
@@ -102,12 +98,3 @@ def test_distance_between_kix_and_nrt(distance):
 ```
 
 ---
-
-## License
-
-This project is provided as-is for educational and testing purposes.
-
-```
-
-Let me know if you want to tailor this for a specific audience (e.g., interview, internal QA team, CI/CD usage, etc.).
-```
