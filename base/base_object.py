@@ -46,6 +46,5 @@ class BaseObject:
         else:
             self._is_present(locator).send_keys(value)
 
-
     def get_text(self, locator:tuple[str, str]) -> str:
         return self._is_visible(locator).text

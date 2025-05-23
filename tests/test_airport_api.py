@@ -39,4 +39,4 @@ def test_distance_between_kix_and_nrt(distance):
     distance_km = data.get("data", {}).get("attributes", {}).get("kilometers")
 
     assert distance_km is not None, "Distance not found"
-    assert distance_km > 32, f"Expected > 400 km, got {distance_km} km"
+    assert distance_km > 400, f"Expected > 400 km, got {distance_km} km"
